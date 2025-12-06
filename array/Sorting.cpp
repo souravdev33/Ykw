@@ -1,23 +1,51 @@
+// 
+
+
+
+
 #include <iostream>
 #include <bits/stdc++.h>
 #include <algorithm>
 #define yes cout << "YES" << endl;
 #define no cout << "NO" << endl;
 #define debug(x) cerr << #x << " = " << (x) << endl;
-using ll= long long;
+using ll = long long;
 using namespace std;
+
+void sourav() {
+    int n;
+    cin>> n;
+    vector<int>arr(n);
+
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+    }
+
+    cout<<sum<<endl;
+    
+}
 
 int32_t main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int n;
-    cin>>n;
-    int arr[n];
+    clock_t start = clock();
 
-    for(auto &i : arr)cin>>i;
-    sort(arr,arr+n);
+    // int tc = 1;
+    // cin >> tc;
 
-    for(auto &i : arr)cout<<i<<" ";
+    // for (int i = 1; i <= tc; i++) {
+    //     // cout << "Case #" << i << ": ";
+    //     sourav();
+    // }
+
+    sourav();
+    //cerr << "Time elapsed: " << clock() - start << "ms!\n";
+
     return 0;
 }
